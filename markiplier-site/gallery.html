@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Markiplier Gallery</title>
+  <link rel="stylesheet" href="gallery.css">
+  <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTImQLhRdiXqD9oTp0Wde5Dj5-dnjrD-1cpTw&s"
+    type="image/x-icon">
+</head>
+
+<body>
+  <div class="header">
+    <a href="home.html" style="color: white; text-decoration: none;">Markiplier Tribute Page</a>
+    <div class="nav">
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="about-us.html">About Us</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact-us.html">Contact Us</a>
+    </div>
+  </div>
+  <div class="container">
+    <h1>Gallery</h1>
+    <div class="slideshow-container">
+      <div class="slide fade">
+        <img src="https://pm1.aminoapps.com/6308/be5157c4bea5a81c4dfacee135033213634149a7_00.jpg" alt="Slide 1">
+      </div>
+      <div class="slide fade">
+        <img src="https://staticg.sportskeeda.com/editor/2020/12/ec88c-16070768097204-800.jpg?w=640" alt="Slide 2">
+      </div>
+      <div class="slide fade">
+        <img src="https://vz.cnwimg.com/thumb-600x300/wp-content/uploads/2021/07/mark.jpg" alt="Slide 3">
+      </div>
+    </div>
+    <div class="gallery">
+      <div class="photos">
+        <img src="https://i.insider.com/639b31f6b7e0f2001809293c?width=800&format=jpeg&auto=webp"
+          alt="Markiplier at PAX 2018">
+        <img
+          src="https://yt3.googleusercontent.com/ytc/AIdro_nfDvwu14-iN5YZcaLIomwno1_3oFcYTmG5_kn7SMj_nec=s900-c-k-c0x00ffffff-no-rj"
+          alt="Markiplier at a fan event">
+        <img
+          src="https://static1.srcdn.com/wordpress/wp-content/uploads/2017/06/Markiplier-Named-Most-Influential-Gamer.jpg"
+          alt="Markiplier speaking at an event">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrjYlMSS_meQjAojMZjfddC_ofhB1t7bt1cA&s"
+          alt="Markiplier with fans">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_GuE5lRr1MN9UyyOIrB_3sZ1oBhG--dsqRg&s"
+          alt="Markiplier at a fan event">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrm9nRP_06ffj2CStLjk1stwjWWWPtlGDr1w&s"
+          alt="Markiplier speaking at an event">
+        <img src="https://i1.sndcdn.com/artworks-zLZWpszdOkjtVC24-8vdRnw-t500x500.jpg" alt="Markiplier with fans">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPiDtXaPa4qFY7596XEKCf_MMySTKDmqpnfg&s"
+          alt="Markiplier at a fan event">
+        <img src="https://image-cdn.essentiallysports.com/wp-content/uploads/Markiplier-800x450.jpeg"
+          alt="Markiplier speaking at an event">
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>&copy; 2025 Markiplier Tribute Page. All Rights Reserved.</p>
+    <p>Contact us at: info@markipliertribute.com</p>
+  </div>
+
+  <script>
+    // Slideshow functionality
+    let slideIndex = 0;
+
+    function showSlides() {
+      let slides = document.getElementsByClassName("slide");
+      for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {
+        slideIndex = 1;
+      }
+      slides[slideIndex - 1].style.display = "block";
+      setTimeout(showSlides, 3000); // Change slide every 3 seconds
+    }
+
+    showSlides(); // Initial call to show slides
+  </script>
+
+</body>
+
+</html>
